@@ -1,6 +1,8 @@
 {
   "name": "MOBAPROJ",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "26f4ebe9"
 }
