@@ -4,12 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'booking-details',
+    redirectTo: 'welcome-page',
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    path: 'booking',
+    loadChildren: './booking/booking.module#BookingPageModule'
   },
   {
     path: 'list',
@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'booking', loadChildren: './booking/booking.module#BookingPageModule' },
   { path: 'booking-details', loadChildren: './booking-details/booking-details.module#BookingDetailsPageModule' },
   { path: 'staff-login', loadChildren: './staff-login/staff-login.module#StaffLoginPageModule' },
-  { path: 'staff-dashboard', loadChildren: './staff-dashboard/staff-dashboard.module#StaffDashboardPageModule' }
+  { path: 'staff-dashboard', loadChildren: './staff-dashboard/staff-dashboard.module#StaffDashboardPageModule' },
 ];
 
 @NgModule({
